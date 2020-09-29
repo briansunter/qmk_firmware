@@ -19,8 +19,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LCTL, KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                         KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,KC_BSLASH,
                       KC_LBRC,KC_RBRC,                                                       KC_PLUS, KC_EQL,
                                       RAISE,KC_SPC,                           KC_SPC, LOWER,
-                                      KC_TAB, KC_PGUP,                        KC_PGDN,  KC_ENT,
-                                      KC_BSPC, KC_GRV,                        KC_LGUI, KC_LSFT
+                                      KC_TAB, MT(MOD_RALT, KC_PGUP),          MT(MOD_RCTL, KC_PGDN), LT(_RAISE,KC_ENT),
+                                      KC_BSPC, KC_GRAVE,                      KC_LGUI, MT(MOD_RSFT, KC_ESC)
   ),
 
   [_LOWER] = LAYOUT_6x6(
@@ -40,8 +40,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
        KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                        KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
        XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,KC_LBRC,                        KC_RBRC,XXXXXXX,KC_NLCK,KC_INS ,KC_SLCK,KC_MUTE,
-       XXXXXXX,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,KC_LPRN,                        XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,KC_VOLU,
-       XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,                        KC_LEFT,KC_DOWN,KC_UP,KC_RGHT,XXXXXXX,KC_VOLD,
+       XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,                        XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,KC_VOLU,
+       XXXXXXX,XXXXXXX,KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,                        KC_LEFT,KC_DOWN,KC_UP,KC_RGHT,XXXXXXX,KC_VOLD,
        XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,                        XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,XXXXXXX,
 
        XXXXXXX,XXXXXXX,            KC_EQL ,XXXXXXX,
