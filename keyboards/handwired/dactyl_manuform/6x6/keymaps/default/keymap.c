@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        XXXXXXX,XXXXXXX,            KC_EQL ,XXXXXXX,
                                                XXXXXXX,XXXXXXX,            XXXXXXX,XXXXXXX,
                                                XXXXXXX,XXXXXXX,            XXXXXXX,XXXXXXX,
-                                               XXXXXXX,XXXXXXX,            XXXXXXX,XXXXXXX
+                                               XXXXXXX,XXXXXXX,            KC_ROPT, KC_RCTL
   ),
 
 };
